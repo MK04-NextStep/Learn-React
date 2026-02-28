@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear-bg {
+  background: url('../public/clear.png') center/cover no-repeat;
+}
+
+.cloudy-bg {
+  background: url('../public/cloudy.png') center/cover no-repeat;
+}
+
+.rainy-bg {
+  background: url('../public/rain.png') center/cover no-repeat;
+}
+
+.snow-bg {
+  background: url('../public/snow.png') center/cover no-repeat;
+}
+
+.storm-bg {
+  background: url('../public/thunder.png') center/cover no-repeat;
+}
+
+.mist-bg{
+    background: url('../public/foggy.png') center/cover no-repeat;
+}
+
+.default{
+    background: url('../public/default.png') center/cover no-repeat;
+}
+.default-bg{
+    background-color: white;
+}

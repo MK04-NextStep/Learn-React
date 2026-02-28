@@ -1,0 +1,27 @@
+.information{
+    /* background-color: rgb(159, 163, 159); */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.information h1{
+    font-size: 80px;
+}
+.information .city-info{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.information img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
