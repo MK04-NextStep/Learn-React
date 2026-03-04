@@ -1,0 +1,128 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.item .main {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+.item .main .image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #2b193d;
+}
+.item .main img {
+    width: 80%;
+}
+.item .main .info {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.item h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #dfe0ec;
+}
+.item .info .desc{
+    font-size: 20px;
+    color: #757179;
+}
+.item .main .price {
+    font-size: 30px;
+    color: #dfe0ec;
+}
+.item .main .discount {
+    font-size: 20px;
+    color: #757179;
+}
+.info .rating{
+    color: orange;
+}
+.info .available, .info .shipping{
+    color: #757179;
+}
+.info .available{
+    font-size: 30px;
+}
+
+.detail-list h3, 
+.review h3{
+    font-size: 30px;
+    color: #dfe0ec;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* product details */
+.item .detail {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+.item .detail ul{
+    list-style-type: none;
+    width: 20%;
+}
+.detail ul li{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    color: #757179;
+    font-size: 20px;
+}
+
+/* product reviews */
+.item .comment {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.comment-li{
+    display: flex;
+    gap: 30px;
+    width: 500px;
+    background-color: #2b193d;
+}
+.comment-li .comment-image{
+    display: flex;
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #241136;
+}
+.comment-li img{
+    width: 50%;
+    height: 50%;
+    border-radius: 60%;
+}
+.comment-image .name,
+.comment-detail .comment-rating{
+    font-size: 20px;
+    color: #dfe0ec;
+}
+.comment-image .email,
+.comment-detail .comment-msg{
+    color: #757179;;
+}
+.comment-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
