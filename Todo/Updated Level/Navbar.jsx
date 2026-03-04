@@ -1,23 +1,17 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import './Navbar.css'
-function Navbar({ completedTask,notCompleted,fullList, clearList, searchTask }) {
-  let [searchVal, setVal] = useState("");
+import TodoList from './ToDoList';
+function Navbar({setFilterType }) {
+  let todoValue = useContext(TodoList);
   return (
     <nav>
       <h1>ToDo list</h1>
       <ul>
-        <li onClick={clearList}>Clear</li>
-        <li onClick={completedTask}>Completed</li>
-        <li onClick={notCompleted}>Not Completed</li>
-        <li onClick={fullList}>Full List</li>
+        <li onClick={todoValue.clearList}>Clear</li>
+        <li onClick={()=> setFilterType("completed") }>Completed</li>
+        <li onClick={()=> setFilterType("notCompleted")}>Not Completed</li>
+        <li onClick={() => setFilterType("all")}>Full List</li>
       </ul>
-      <div className='search-task'>
-        <input type="text" value={searchVal} onChange={(e) => setVal(e.target.value)} placeholder='Enter task here' />
-      <button onClick={() => {
-        searchTask(searchVal);
-        setVal("")
-      }}>Search</button></div>
-
     </nav>
   )
 }
