@@ -1,11 +1,14 @@
 import { MdEditNote } from "react-icons/md";
 import { MdDeleteForever } from "react-icons/md";
 import { MdOutlineDoneAll } from "react-icons/md";
-import { useState } from "react"
+import { useContext, useState } from "react"
 import './Task.css'
-function Task({ data, addAction }) {
+import TodoList from "./ToDoList";
+
+function Task({ data}) {
     let [valueSet, setValue] = useState(data.title);
     let [isUpdate, setIsUpdate] = useState(false);
+    let todoVal = useContext(TodoList);
 
     function isExpired(taskDate) {
         let today = new Date();
@@ -22,38 +25,23 @@ function Task({ data, addAction }) {
                         <input type="text" value={valueSet}
                             onChange={(e) => setValue(e.target.value)} />
                         <button onClick={() => {
-                            addAction("update", data.id, valueSet)
+                            todoVal.addAction("update", data.id, valueSet)
                             setIsUpdate(false);
                         }}>change</button>
                     </div> :
-                    <div className="add" style={{
-                        backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                    }}>
+                    <div className={
+                        isExpired(data.date) ? "add-expire":
+                        data.completed == true ? "completed": "add"}>
                         <h3>{data.title}</h3>
                         {
                             data.completed == true ?
-                                <button style={{
-                                    backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                                }} onClick={() => addAction("remove", data.id)}><MdDeleteForever style={{
-                                    backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                                }}/></button> :
+                                <button onClick={() => todoVal.addAction("remove", data.id)}>
+                                    <MdDeleteForever/></button> :
                                 <div className="button">
                                     <p>{data.date}</p>
-                                    <button style={{
-           
-                                        backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                                    }} onClick={() => addAction("isDone", data.id)}><MdOutlineDoneAll style={{
-                                        backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                                    }}/></button>
-                                    <button style={{
-                                        backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                                    }} onClick={
-                                        () => {
-                                            setIsUpdate(true);
-                                        }
-                                    }><MdEditNote style={{
-                                        backgroundColor: isExpired(data.date) ? "rgb(184, 57, 57)" : " #391842"
-                                    }}/></button>
+                                    <button onClick={() => todoVal.addAction("isDone", data.id)}>
+                                        <MdOutlineDoneAll /></button>
+                                    <button onClick={() => setIsUpdate(true)}><MdEditNote /></button>
                                 </div>
                         }
                     </div>
