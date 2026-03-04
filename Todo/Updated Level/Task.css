@@ -10,6 +10,36 @@
     color: #bab4b8;
     box-shadow: 0 4px 4px #0f040c;
 }
+.add{
+    background-color: #391842;
+}
+.add-expire{
+    max-width: 400px;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    color: #bab4b8;
+    box-shadow: 0 4px 4px #0f040c;
+    background-color: rgb(252, 77, 77);
+}
+.completed{
+    max-width: 400px;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    color: #bab4b8;
+    box-shadow: 0 4px 4px #0f040c;
+    background-color: rgb(1, 121, 1);
+}
+
 .updated input {
     padding: 10px;
     width: 300px;
@@ -33,6 +63,32 @@
 .add button:hover {
     background-color: #301338;
 }
+
+.add-expire button{
+    border: none;
+    background-color: rgb(252, 77, 77);
+    color: #bab4b8;
+}
+.add-expire button:hover,
+.add-expire svg:hover{
+    background-color: red;
+}
+.completed button{
+    border: none;
+    background-color: green;
+    color: #bab4b8;
+}
+.completed svg{
+    border: none;
+    width: 30px;
+    height: 20px;
+    color: #bab4b8;
+    background-color: green;
+}
+.completed button:hover,
+.completed svg:hover{
+    background-color: rgb(3, 77, 3);
+}
 .add svg {
     border: none;
     background-color: #391842;
@@ -42,4 +98,12 @@
 }
 .add svg:hover {
     background-color: #301338;
+}
+
+.add-expire svg{
+    border: none;
+    background-color: rgb(252, 77, 77);
+    width: 30px;
+    height: 20px;
+    color: #bab4b8;
 }
