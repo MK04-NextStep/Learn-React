@@ -1,0 +1,18 @@
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.cart h1{
+    color: #dfe0ec;
+    font-size: 50px;
+}
+.cart-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

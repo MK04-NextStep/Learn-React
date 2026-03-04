@@ -1,0 +1,52 @@
+.ship{
+    width: 290px;
+    height: 460px;
+    background-color: #441f46;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.ship a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+.ship .rate{
+    color: rgb(255, 81, 0);
+}
+.ship .ship-img{
+    width: 80%;
+    height: 60%;
+}
+.ship .btn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #27284e;
+    color: white;
+}
+.ship .btn:hover{
+    background-color: #0e0e18;
+}
+.ship .desc{
+    height: 55px;
+    overflow: hidden;
+}
+.ship .discount{
+    font-size: 20px;
+}
+.ship .price, .ship .discount,
+.ship h2{
+    color: #dfe0ec;
+}
+.ship p{
+    color: #757179;
+}
