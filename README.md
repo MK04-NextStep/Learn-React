@@ -1,4 +1,4 @@
-#React Projects
+# React Projects
 I created these projects while practicing my react skills
 
 ##E-Commerce
