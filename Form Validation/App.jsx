@@ -1,4 +1,3 @@
-import './App.css'
 import Login from './Pages/Login/Login'
 import Register from './Pages/Registration/Register'
 import { Routes,Route,Navigate } from 'react-router-dom'
@@ -14,7 +13,11 @@ function App() {
   })
 
   return(
-    <div className="container">
+    <div style= {{
+  display: "flex";
+  width: "100%";
+  minHeight: "100vh";
+    }}>
 
       <Routes>
         <Route path='/' element={<Login />}/>
