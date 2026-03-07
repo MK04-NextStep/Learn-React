@@ -1,0 +1,35 @@
+.box{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box-inside{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.box-inside li{
+    display: flex;
+    gap: 10px;
+}
+.filter{
+    background-color: grey;
+    padding: 10px;
+}
+.filter form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter form button{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 20px;
+}
+.filter form button:hover{
+    background-color: rgb(92, 87, 87);
+}
