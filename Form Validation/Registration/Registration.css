@@ -1,0 +1,30 @@
+.register-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.register-page form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: gray;
+    padding: 20px;
+}
+.register-page form input{
+    width: 93%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.register-page form button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}
