@@ -1,0 +1,64 @@
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: 10px;
+}
+.login-page form{
+    background-color: rgb(179, 176, 176);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+.login-page input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.button{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.button input, .button button{
+    width: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+.button svg{
+    border-radius: 20px;
+}
+.button input:hover, .button button:hover,
+.login-page #newuser:hover{
+    background-color: rgb(80, 78, 78);
+}
+.login-page .password-line input{
+    width: 90%;
+}
+.login-page .password-line button{
+    width: 10%;
+    height: 100%;
+    font-size: 18px;
+    border: none;
+}
+.login-page .password-line{
+    border: none;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.login-page p{
+    width: 100%;
+    text-align: center;
+}
