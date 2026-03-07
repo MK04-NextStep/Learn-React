@@ -1,7 +1,7 @@
 # React Projects
 I created these projects while practicing my react skills
 
-## E-Commerce
+## 1. E-Commerce
 I created an E-commerce user Interface.
 
 ### features
@@ -12,7 +12,7 @@ I created an E-commerce user Interface.
 - useContext, useState, useEffect Hooks
 - Routing
 
-## Form Usage
+## 2. Form Usage
 I created E-commerce user interface to filter data
 
 ### What I learned
@@ -21,7 +21,7 @@ I created E-commerce user interface to filter data
 - custom hook
 - Routing
 
-## ToDo App
+## 3. ToDo App
 I created ToDo List user Interface to learn about basic react 
 
 ### What I Learned
@@ -29,7 +29,7 @@ I created ToDo List user Interface to learn about basic react
 - LocalStorage usage
 - custom hooks
 
-## Weather App
+## 4. Weather App
 I create this to learn about Api usage
 
 ### What I learned
