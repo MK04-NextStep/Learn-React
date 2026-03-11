@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.body{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.body h1{
+  padding: 10px;
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+}
+.body .stars{
+  display: flex;
+  gap: 10px;
+}
+.body svg{
+  font-size: 60px;
+}
+.body p{
+  font-size: 20px;
+}
+.body button{
+  width: 100px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(187, 184, 184);
+  border-radius: 20px;
+  color: rgb(78, 77, 77);
+}
+.body button:hover{
+  background-color: rgb(73, 70, 70);
+  color: white;
+}
