@@ -1,0 +1,20 @@
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: gray;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav ul li:hover{
+    background-color: rgb(56, 51, 51);
+}
