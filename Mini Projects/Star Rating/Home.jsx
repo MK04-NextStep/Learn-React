@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { FaRegStar } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
-import './App.css'
+import './Home.css'
 function Home() {
     let total = 5;
     let [selected, setSelected] = useState(0);
