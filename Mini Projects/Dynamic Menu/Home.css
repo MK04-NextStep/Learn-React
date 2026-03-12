@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.body{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.body h1{
+  text-align: center;
+  width: 90%;
+}
+.body .navbar{
+  display: flex;
+  padding: 10px 0;
+  box-shadow: 4px 4px 5px blue;
+}
+.body .navbar svg{
+  font-size: 30px;
+  padding-left: 10px;
+}
+.body .sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  background-color: white;
+  width: 20%;
+  min-height: 100vh;
+  padding: 30px;
+  box-shadow: 1px 1px 5px blue;
+}
+.bundle{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.bundle .level-1{
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.bundle .level-2{
+  width: 80%;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.bundle .level-3{
+  width: 60%;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.body button{
+  border: none;
+  width: 100px;
+  padding: 10px;
+  color: black;
+}
+.body button:hover{
+  color: blue;
+}
+.bundle h2{
+  width: 90%;
+  text-align: center;
+  background-color: rgb(224, 219, 219);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
